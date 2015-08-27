@@ -15,7 +15,6 @@
 		1A91F9EF18E2530B00AA8B7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F9EE18E2530B00AA8B7E /* main.m */; };
 		1A91F9F618E2530B00AA8B7E /* QSHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F9F518E2530B00AA8B7E /* QSHAppDelegate.m */; };
 		1A91F9F918E2530B00AA8B7E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A91F9F718E2530B00AA8B7E /* MainMenu.xib */; };
-		1A91F9FB18E2530B00AA8B7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A91F9FA18E2530B00AA8B7E /* Images.xcassets */; };
 		1A91FA0218E2530B00AA8B7E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A91FA0118E2530B00AA8B7E /* XCTest.framework */; };
 		1A91FA0318E2530B00AA8B7E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A91F9E218E2530B00AA8B7E /* Cocoa.framework */; };
 		1A91FA0B18E2530C00AA8B7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A91FA0918E2530C00AA8B7E /* InfoPlist.strings */; };
@@ -26,6 +25,7 @@
 		1AA896741964FB1800E4FDAC /* QSHWebViewWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AA896721964FB1800E4FDAC /* QSHWebViewWindowController.xib */; };
 		1ABD40311912E3AB002A53FB /* QSHStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD40301912E3AB002A53FB /* QSHStatusItemView.m */; };
 		1AF6371E18E9FF430099B508 /* QSHWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6371D18E9FF430099B508 /* QSHWebViewDelegate.m */; };
+		A4FD45CB1B8EDF2D0078339B /* tray-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A4FD45CA1B8EDF2D0078339B /* tray-icon.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,6 @@
 		1A91F9F418E2530B00AA8B7E /* QSHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSHAppDelegate.h; sourceTree = "<group>"; };
 		1A91F9F518E2530B00AA8B7E /* QSHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSHAppDelegate.m; sourceTree = "<group>"; };
 		1A91F9F818E2530B00AA8B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		1A91F9FA18E2530B00AA8B7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1A91FA0018E2530B00AA8B7E /* quark-shellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quark-shellTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A91FA0118E2530B00AA8B7E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1A91FA0818E2530C00AA8B7E /* quark-shellTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "quark-shellTests-Info.plist"; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		1ABD40301912E3AB002A53FB /* QSHStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHStatusItemView.m; sourceTree = "<group>"; };
 		1AF6371C18E9FF430099B508 /* QSHWebViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSHWebViewDelegate.h; sourceTree = "<group>"; };
 		1AF6371D18E9FF430099B508 /* QSHWebViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHWebViewDelegate.m; sourceTree = "<group>"; };
+		A4FD45CA1B8EDF2D0078339B /* tray-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tray-icon.png"; path = "Assets/tray-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +101,7 @@
 		1A91F9D618E2530B00AA8B7E = {
 			isa = PBXGroup;
 			children = (
+				A4FD45CA1B8EDF2D0078339B /* tray-icon.png */,
 				1A91F9E818E2530B00AA8B7E /* quark-shell */,
 				1A91FA0618E2530C00AA8B7E /* quark-shellTests */,
 				1A91F9E118E2530B00AA8B7E /* Frameworks */,
@@ -159,7 +160,6 @@
 				1AA896721964FB1800E4FDAC /* QSHWebViewWindowController.xib */,
 				1A9A456C1A1C93C600C98589 /* NSWindow+Fade.h */,
 				1A9A456D1A1C93C600C98589 /* NSWindow+Fade.m */,
-				1A91F9FA18E2530B00AA8B7E /* Images.xcassets */,
 				1A91F9E918E2530B00AA8B7E /* Supporting Files */,
 			);
 			path = "quark-shell";
@@ -290,8 +290,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A91F9ED18E2530B00AA8B7E /* InfoPlist.strings in Resources */,
-				1A91F9FB18E2530B00AA8B7E /* Images.xcassets in Resources */,
 				1AA896741964FB1800E4FDAC /* QSHWebViewWindowController.xib in Resources */,
+				A4FD45CB1B8EDF2D0078339B /* tray-icon.png in Resources */,
 				1A91F9F918E2530B00AA8B7E /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -52,7 +52,7 @@
         self.statusItemView.statusItem = self.statusItem;
     }
     else {
-        NSImage *statusIcon = [NSImage imageNamed:@"StatusIcon"];
+        NSImage *statusIcon = [NSImage imageNamed:@"tray-icon"];
         [statusIcon setTemplate:YES];
         self.statusItem.button.image = statusIcon;
         

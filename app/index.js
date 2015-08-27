@@ -20,34 +20,34 @@
         console.log("What did I say?")
     })
 
-    quark.setupPreferences([
-        {"label": "General", "identifier": "general", "icon": "NSPreferencesGeneral", "height": 192},
-        {"label": "Account", "identifier": "account", "icon": "NSUserAccounts", "height": 102},
-        {
-            "label": "Shortcut", "identifier": "shortcut", "icon": "NSAdvanced", "height": 80,
-            "nativeComponents": [{
-                type: "ShortcutRecorder",
-                options: {
-                    x: 140,
-                    y: 28,
-                    keycode: 0x7A, // F1 key
-                    modifierFlags: 0, // no modifier key
-                    onChange: function (keycode, modifierFlags) {
-                        console.log("New shortcut:", keycode, modifierFlags)
-                        quark.clearKeyboardShortcut()
-                        quark.addKeyboardShortcut({
-                            keycode: keycode,
-                            modifierFlags: modifierFlags,
-                            callback: function () {
-                                console.log("wow")
-                                quark.openPopup()
-                            }
-                        })
-                    }
-                }
-            }]
-        }
-    ])
+    // quark.setupPreferences([
+    //     {"label": "General", "identifier": "general", "icon": "NSPreferencesGeneral", "height": 192},
+    //     {"label": "Account", "identifier": "account", "icon": "NSUserAccounts", "height": 102},
+    //     {
+    //         "label": "Shortcut", "identifier": "shortcut", "icon": "NSAdvanced", "height": 80,
+    //         "nativeComponents": [{
+    //             type: "ShortcutRecorder",
+    //             options: {
+    //                 x: 140,
+    //                 y: 28,
+    //                 keycode: 0x7A, // F1 key
+    //                 modifierFlags: 0, // no modifier key
+    //                 onChange: function (keycode, modifierFlags) {
+    //                     console.log("New shortcut:", keycode, modifierFlags)
+    //                     quark.clearKeyboardShortcut()
+    //                     quark.addKeyboardShortcut({
+    //                         keycode: keycode,
+    //                         modifierFlags: modifierFlags,
+    //                         callback: function () {
+    //                             console.log("wow")
+    //                             quark.openPopup()
+    //                         }
+    //                     })
+    //                 }
+    //             }
+    //         }]
+    //     }
+    // ])
 
 //    $("#toggle-pin").click(function() {
 //        if ($(this).html() == "Pin") {
