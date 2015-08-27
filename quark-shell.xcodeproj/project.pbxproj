@@ -26,10 +26,6 @@
 		1AA896731964FB1800E4FDAC /* QSHWebViewWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA896711964FB1800E4FDAC /* QSHWebViewWindowController.m */; };
 		1AA896741964FB1800E4FDAC /* QSHWebViewWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AA896721964FB1800E4FDAC /* QSHWebViewWindowController.xib */; };
 		1ABD40311912E3AB002A53FB /* QSHStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD40301912E3AB002A53FB /* QSHStatusItemView.m */; };
-		1ADE93581B0F093E00D69828 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE93571B0F093E00D69828 /* AppDelegate.m */; };
-		1ADE935A1B0F093E00D69828 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE93591B0F093E00D69828 /* main.m */; };
-		1ADE935F1B0F093E00D69828 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ADE935D1B0F093E00D69828 /* MainMenu.xib */; };
-		1ADE93781B0F0A0A00D69828 /* quark-shell-helper.app in Copy Helper */ = {isa = PBXBuildFile; fileRef = 1ADE93521B0F093E00D69828 /* quark-shell-helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1AF6371E18E9FF430099B508 /* QSHWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6371D18E9FF430099B508 /* QSHWebViewDelegate.m */; };
 		1AFBA8BA19483E4900BEDA0A /* QSHPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBA8B819483E4900BEDA0A /* QSHPreferencesViewController.m */; };
 /* End PBXBuildFile section */
@@ -42,28 +38,7 @@
 			remoteGlobalIDString = 1A91F9DE18E2530B00AA8B7E;
 			remoteInfo = "quark-shell";
 		};
-		1ADE93741B0F098900D69828 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1A91F9D718E2530B00AA8B7E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1ADE93511B0F093E00D69828;
-			remoteInfo = "quark-shell-helper";
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		1A05BC6D1B0D91D400E5BCED /* Copy Helper */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = Contents/Library/LoginItems;
-			dstSubfolderSpec = 1;
-			files = (
-				1ADE93781B0F0A0A00D69828 /* quark-shell-helper.app in Copy Helper */,
-			);
-			name = "Copy Helper";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1A05BC371B0D8A0B00E5BCED /* quark-shell.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "quark-shell.entitlements"; sourceTree = "<group>"; };
@@ -101,13 +76,6 @@
 		1AA896721964FB1800E4FDAC /* QSHWebViewWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSHWebViewWindowController.xib; sourceTree = "<group>"; };
 		1ABD402F1912E3AB002A53FB /* QSHStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSHStatusItemView.h; sourceTree = "<group>"; };
 		1ABD40301912E3AB002A53FB /* QSHStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHStatusItemView.m; sourceTree = "<group>"; };
-		1ADE93521B0F093E00D69828 /* quark-shell-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quark-shell-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1ADE93551B0F093E00D69828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1ADE93561B0F093E00D69828 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1ADE93571B0F093E00D69828 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1ADE93591B0F093E00D69828 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1ADE935E1B0F093E00D69828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		1ADE93791B0F0E8D00D69828 /* quark-shell-helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "quark-shell-helper.entitlements"; sourceTree = "<group>"; };
 		1AF6371C18E9FF430099B508 /* QSHWebViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSHWebViewDelegate.h; sourceTree = "<group>"; };
 		1AF6371D18E9FF430099B508 /* QSHWebViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHWebViewDelegate.m; sourceTree = "<group>"; };
 		1AFBA8B719483E4900BEDA0A /* QSHPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSHPreferencesViewController.h; sourceTree = "<group>"; };
@@ -133,13 +101,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1ADE934F1B0F093E00D69828 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -149,7 +110,6 @@
 				1A75781C19B9A261002A9886 /* app */,
 				1A91F9E818E2530B00AA8B7E /* quark-shell */,
 				1A91FA0618E2530C00AA8B7E /* quark-shellTests */,
-				1ADE93531B0F093E00D69828 /* quark-shell-helper */,
 				1A91F9E118E2530B00AA8B7E /* Frameworks */,
 				1A91F9E018E2530B00AA8B7E /* Products */,
 			);
@@ -160,7 +120,6 @@
 			children = (
 				1A91F9DF18E2530B00AA8B7E /* quark-shell.app */,
 				1A91FA0018E2530B00AA8B7E /* quark-shellTests.xctest */,
-				1ADE93521B0F093E00D69828 /* quark-shell-helper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,27 +213,6 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
-		1ADE93531B0F093E00D69828 /* quark-shell-helper */ = {
-			isa = PBXGroup;
-			children = (
-				1ADE93791B0F0E8D00D69828 /* quark-shell-helper.entitlements */,
-				1ADE93561B0F093E00D69828 /* AppDelegate.h */,
-				1ADE93571B0F093E00D69828 /* AppDelegate.m */,
-				1ADE935D1B0F093E00D69828 /* MainMenu.xib */,
-				1ADE93541B0F093E00D69828 /* Supporting Files */,
-			);
-			path = "quark-shell-helper";
-			sourceTree = "<group>";
-		};
-		1ADE93541B0F093E00D69828 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1ADE93551B0F093E00D69828 /* Info.plist */,
-				1ADE93591B0F093E00D69828 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -286,12 +224,10 @@
 				1A91F9DC18E2530B00AA8B7E /* Frameworks */,
 				1A91F9DD18E2530B00AA8B7E /* Resources */,
 				A4FD45B41B8E848C0078339B /* ShellScript */,
-				1A05BC6D1B0D91D400E5BCED /* Copy Helper */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1ADE93751B0F098900D69828 /* PBXTargetDependency */,
 			);
 			name = "quark-shell";
 			productName = "quark-shell";
@@ -316,23 +252,6 @@
 			productReference = 1A91FA0018E2530B00AA8B7E /* quark-shellTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1ADE93511B0F093E00D69828 /* quark-shell-helper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1ADE93711B0F093E00D69828 /* Build configuration list for PBXNativeTarget "quark-shell-helper" */;
-			buildPhases = (
-				1ADE934E1B0F093E00D69828 /* Sources */,
-				1ADE934F1B0F093E00D69828 /* Frameworks */,
-				1ADE93501B0F093E00D69828 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "quark-shell-helper";
-			productName = "quark-shell-helper";
-			productReference = 1ADE93521B0F093E00D69828 /* quark-shell-helper.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -354,15 +273,6 @@
 					1A91F9FF18E2530B00AA8B7E = {
 						TestTargetID = 1A91F9DE18E2530B00AA8B7E;
 					};
-					1ADE93511B0F093E00D69828 = {
-						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = 7676B49VAW;
-						SystemCapabilities = {
-							com.apple.Sandbox = {
-								enabled = 1;
-							};
-						};
-					};
 				};
 			};
 			buildConfigurationList = 1A91F9DA18E2530B00AA8B7E /* Build configuration list for PBXProject "quark-shell" */;
@@ -380,7 +290,6 @@
 			targets = (
 				1A91F9DE18E2530B00AA8B7E /* quark-shell */,
 				1A91F9FF18E2530B00AA8B7E /* quark-shellTests */,
-				1ADE93511B0F093E00D69828 /* quark-shell-helper */,
 			);
 		};
 /* End PBXProject section */
@@ -403,14 +312,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A91FA0B18E2530C00AA8B7E /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1ADE93501B0F093E00D69828 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1ADE935F1B0F093E00D69828 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,15 +359,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1ADE934E1B0F093E00D69828 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1ADE935A1B0F093E00D69828 /* main.m in Sources */,
-				1ADE93581B0F093E00D69828 /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -474,11 +366,6 @@
 			isa = PBXTargetDependency;
 			target = 1A91F9DE18E2530B00AA8B7E /* quark-shell */;
 			targetProxy = 1A91FA0418E2530C00AA8B7E /* PBXContainerItemProxy */;
-		};
-		1ADE93751B0F098900D69828 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1ADE93511B0F093E00D69828 /* quark-shell-helper */;
-			targetProxy = 1ADE93741B0F098900D69828 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -513,14 +400,6 @@
 				1A91FA0A18E2530C00AA8B7E /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		1ADE935D1B0F093E00D69828 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1ADE935E1B0F093E00D69828 /* Base */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -668,46 +547,6 @@
 			};
 			name = Release;
 		};
-		1ADE936C1B0F093E00D69828 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_ENTITLEMENTS = "quark-shell-helper/quark-shell-helper.entitlements";
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "quark-shell-helper/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		1ADE936D1B0F093E00D69828 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_ENTITLEMENTS = "quark-shell-helper/quark-shell-helper.entitlements";
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "quark-shell-helper/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -734,15 +573,6 @@
 			buildConfigurations = (
 				1A91FA1418E2530C00AA8B7E /* Debug */,
 				1A91FA1518E2530C00AA8B7E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1ADE93711B0F093E00D69828 /* Build configuration list for PBXNativeTarget "quark-shell-helper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1ADE936C1B0F093E00D69828 /* Debug */,
-				1ADE936D1B0F093E00D69828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
