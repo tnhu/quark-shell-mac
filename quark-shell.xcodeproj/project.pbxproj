@@ -13,7 +13,6 @@
 		1A91F9E318E2530B00AA8B7E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A91F9E218E2530B00AA8B7E /* Cocoa.framework */; };
 		1A91F9ED18E2530B00AA8B7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A91F9EB18E2530B00AA8B7E /* InfoPlist.strings */; };
 		1A91F9EF18E2530B00AA8B7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F9EE18E2530B00AA8B7E /* main.m */; };
-		1A91F9F318E2530B00AA8B7E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1A91F9F118E2530B00AA8B7E /* Credits.rtf */; };
 		1A91F9F618E2530B00AA8B7E /* QSHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F9F518E2530B00AA8B7E /* QSHAppDelegate.m */; };
 		1A91F9F918E2530B00AA8B7E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A91F9F718E2530B00AA8B7E /* MainMenu.xib */; };
 		1A91F9FB18E2530B00AA8B7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A91F9FA18E2530B00AA8B7E /* Images.xcassets */; };
@@ -46,7 +45,6 @@
 		1A42764919196B6F00815DC6 /* QSHWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHWindow.m; sourceTree = "<group>"; };
 		1A42D2C8194C2C620091F581 /* QSHWebScriptObjectConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSHWebScriptObjectConverter.h; sourceTree = "<group>"; };
 		1A42D2C9194C2C620091F581 /* QSHWebScriptObjectConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = QSHWebScriptObjectConverter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		1A75781C19B9A261002A9886 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = "<group>"; };
 		1A82DE591903B095006AB37F /* QSHWindowBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSHWindowBorderView.h; sourceTree = "<group>"; };
 		1A82DE5A1903B095006AB37F /* QSHWindowBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHWindowBorderView.m; sourceTree = "<group>"; };
 		1A91F9DF18E2530B00AA8B7E /* quark-shell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quark-shell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +56,6 @@
 		1A91F9EC18E2530B00AA8B7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A91F9EE18E2530B00AA8B7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A91F9F018E2530B00AA8B7E /* quark-shell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quark-shell-Prefix.pch"; sourceTree = "<group>"; };
-		1A91F9F218E2530B00AA8B7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		1A91F9F418E2530B00AA8B7E /* QSHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSHAppDelegate.h; sourceTree = "<group>"; };
 		1A91F9F518E2530B00AA8B7E /* QSHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSHAppDelegate.m; sourceTree = "<group>"; };
 		1A91F9F818E2530B00AA8B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -107,7 +104,6 @@
 		1A91F9D618E2530B00AA8B7E = {
 			isa = PBXGroup;
 			children = (
-				1A75781C19B9A261002A9886 /* app */,
 				1A91F9E818E2530B00AA8B7E /* quark-shell */,
 				1A91FA0618E2530C00AA8B7E /* quark-shellTests */,
 				1A91F9E118E2530B00AA8B7E /* Frameworks */,
@@ -181,7 +177,6 @@
 				1A91F9EB18E2530B00AA8B7E /* InfoPlist.strings */,
 				1A91F9EE18E2530B00AA8B7E /* main.m */,
 				1A91F9F018E2530B00AA8B7E /* quark-shell-Prefix.pch */,
-				1A91F9F118E2530B00AA8B7E /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -301,7 +296,6 @@
 			files = (
 				1A91F9ED18E2530B00AA8B7E /* InfoPlist.strings in Resources */,
 				1A91F9FB18E2530B00AA8B7E /* Images.xcassets in Resources */,
-				1A91F9F318E2530B00AA8B7E /* Credits.rtf in Resources */,
 				1AA896741964FB1800E4FDAC /* QSHWebViewWindowController.xib in Resources */,
 				1A91F9F918E2530B00AA8B7E /* MainMenu.xib in Resources */,
 			);
@@ -376,14 +370,6 @@
 				1A91F9EC18E2530B00AA8B7E /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		1A91F9F118E2530B00AA8B7E /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A91F9F218E2530B00AA8B7E /* en */,
-			);
-			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
 		1A91F9F718E2530B00AA8B7E /* MainMenu.xib */ = {
