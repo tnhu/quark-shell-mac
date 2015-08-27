@@ -26,7 +26,6 @@
 		1AA896741964FB1800E4FDAC /* QSHWebViewWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AA896721964FB1800E4FDAC /* QSHWebViewWindowController.xib */; };
 		1ABD40311912E3AB002A53FB /* QSHStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD40301912E3AB002A53FB /* QSHStatusItemView.m */; };
 		1AF6371E18E9FF430099B508 /* QSHWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6371D18E9FF430099B508 /* QSHWebViewDelegate.m */; };
-		1AFBA8BA19483E4900BEDA0A /* QSHPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBA8B819483E4900BEDA0A /* QSHPreferencesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,8 +74,6 @@
 		1ABD40301912E3AB002A53FB /* QSHStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHStatusItemView.m; sourceTree = "<group>"; };
 		1AF6371C18E9FF430099B508 /* QSHWebViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSHWebViewDelegate.h; sourceTree = "<group>"; };
 		1AF6371D18E9FF430099B508 /* QSHWebViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHWebViewDelegate.m; sourceTree = "<group>"; };
-		1AFBA8B719483E4900BEDA0A /* QSHPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSHPreferencesViewController.h; sourceTree = "<group>"; };
-		1AFBA8B819483E4900BEDA0A /* QSHPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHPreferencesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,8 +154,6 @@
 				1ABD40301912E3AB002A53FB /* QSHStatusItemView.m */,
 				1AF6371C18E9FF430099B508 /* QSHWebViewDelegate.h */,
 				1AF6371D18E9FF430099B508 /* QSHWebViewDelegate.m */,
-				1AFBA8B719483E4900BEDA0A /* QSHPreferencesViewController.h */,
-				1AFBA8B819483E4900BEDA0A /* QSHPreferencesViewController.m */,
 				1AA896701964FB1800E4FDAC /* QSHWebViewWindowController.h */,
 				1AA896711964FB1800E4FDAC /* QSHWebViewWindowController.m */,
 				1AA896721964FB1800E4FDAC /* QSHWebViewWindowController.xib */,
@@ -333,7 +328,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A9A456E1A1C93C600C98589 /* NSWindow+Fade.m in Sources */,
-				1AFBA8BA19483E4900BEDA0A /* QSHPreferencesViewController.m in Sources */,
 				1A91F9F618E2530B00AA8B7E /* QSHAppDelegate.m in Sources */,
 				1AA896731964FB1800E4FDAC /* QSHWebViewWindowController.m in Sources */,
 				1A42D2CA194C2C620091F581 /* QSHWebScriptObjectConverter.m in Sources */,

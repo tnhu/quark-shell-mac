@@ -7,7 +7,7 @@
 //
 
 #import "QSHWebViewDelegate.h"
-#import "QSHPreferencesViewController.h"
+//#import "QSHPreferencesViewController.h"
 #import "QSHWebScriptObjectConverter.h"
 #import "QSHWebViewWindowController.h"
 //#import <MASShortcut+Monitoring.h>
@@ -334,30 +334,30 @@ static const NSInteger kPreferencesDefaultHeight = 192;
 //    [MASShortcut clearGlobalHotkeyMonitor];
 }
 
-- (void)setupPreferenes:(WebScriptObject *)scriptObj
-{
-    QSHWebScriptObjectConverter *converter = [[QSHWebScriptObjectConverter alloc] initWithWebView:self.webView];
-    NSArray *preferencesArray = [converter arrayFromWebScriptObject:scriptObj];
-    NSMutableArray *viewControllers = [NSMutableArray array];
-	for (NSDictionary *preferences in preferencesArray) {
-        NSInteger height = preferences[@"height"] ? [preferences[@"height"] integerValue]: kPreferencesDefaultHeight;
-        QSHPreferencesViewController *vc = [[QSHPreferencesViewController alloc]
-                                            initWithIdentifier:preferences[@"identifier"]
-                                            toolbarImage:[NSImage imageNamed:preferences[@"icon"]]
-                                            toolbarLabel:preferences[@"label"]
-                                            height:height
-                                            delegate:self];
-
-        for (NSDictionary *component in preferences[@"nativeComponents"]) {
-            [vc addNativeComponent:component];
-        }
-
-        [viewControllers addObject:vc];
-	}
-
-    NSString *title = @"Preferences";
-//    self.preferencesWindowController = [[RHPreferencesWindowController alloc] initWithViewControllers:viewControllers andTitle:title];
-}
+//- (void)setupPreferenes:(WebScriptObject *)scriptObj
+//{
+//    QSHWebScriptObjectConverter *converter = [[QSHWebScriptObjectConverter alloc] initWithWebView:self.webView];
+//    NSArray *preferencesArray = [converter arrayFromWebScriptObject:scriptObj];
+//    NSMutableArray *viewControllers = [NSMutableArray array];
+//	for (NSDictionary *preferences in preferencesArray) {
+//        NSInteger height = preferences[@"height"] ? [preferences[@"height"] integerValue]: kPreferencesDefaultHeight;
+//        QSHPreferencesViewController *vc = [[QSHPreferencesViewController alloc]
+//                                            initWithIdentifier:preferences[@"identifier"]
+//                                            toolbarImage:[NSImage imageNamed:preferences[@"icon"]]
+//                                            toolbarLabel:preferences[@"label"]
+//                                            height:height
+//                                            delegate:self];
+//
+//        for (NSDictionary *component in preferences[@"nativeComponents"]) {
+//            [vc addNativeComponent:component];
+//        }
+//
+//        [viewControllers addObject:vc];
+//	}
+//
+//    NSString *title = @"Preferences";
+////    self.preferencesWindowController = [[RHPreferencesWindowController alloc] initWithViewControllers:viewControllers andTitle:title];
+//}
 
 - (void)openPreferences
 {
