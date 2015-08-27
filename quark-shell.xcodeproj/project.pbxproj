@@ -33,7 +33,6 @@
 		1AF6371E18E9FF430099B508 /* QSHWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6371D18E9FF430099B508 /* QSHWebViewDelegate.m */; };
 		1AFBA8BA19483E4900BEDA0A /* QSHPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBA8B819483E4900BEDA0A /* QSHPreferencesViewController.m */; };
 		1AFBA8BB19483E4900BEDA0A /* QSHPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBA8B919483E4900BEDA0A /* QSHPreferencesViewController.xib */; };
-		2E50CD93BE1C4FDAA087BA31 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDF5A5127B1458BB9768C43 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,7 +126,6 @@
 			files = (
 				1A91FA5A18E25F3C00AA8B7E /* WebKit.framework in Frameworks */,
 				1A91F9E318E2530B00AA8B7E /* Cocoa.framework in Frameworks */,
-				2E50CD93BE1C4FDAA087BA31 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,12 +299,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A91FA1018E2530C00AA8B7E /* Build configuration list for PBXNativeTarget "quark-shell" */;
 			buildPhases = (
-				95C1AD7FB7144AA080FC28BA /* Check Pods Manifest.lock */,
 				1A91F9DB18E2530B00AA8B7E /* Sources */,
 				1A91F9DC18E2530B00AA8B7E /* Frameworks */,
 				1A91F9DD18E2530B00AA8B7E /* Resources */,
-				28BFB662D6264E858326F16E /* Copy Pods Resources */,
-				1AB53A9819988EA100A4A15F /* Run Script */,
+				A4FD45B41B8E848C0078339B /* ShellScript */,
 				1A05BC6D1B0D91D400E5BCED /* Copy Helper */,
 			);
 			buildRules = (
@@ -439,49 +435,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1AB53A9819988EA100A4A15F /* Run Script */ = {
+		A4FD45B41B8E848C0078339B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "echo \"rm -rf \\\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Resources/app\\\"\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Resources/app\"\n\necho \"cp -RL \\\"${SRCROOT}/app\\\" \\\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Resources/app\\\"\"\ncp -RL \"${SRCROOT}/app\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Resources/app\"";
-		};
-		28BFB662D6264E858326F16E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		95C1AD7FB7144AA080FC28BA /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 

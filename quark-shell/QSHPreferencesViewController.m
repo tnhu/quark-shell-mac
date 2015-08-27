@@ -8,8 +8,8 @@
 
 #import "QSHPreferencesViewController.h"
 #import "QSHWebScriptObjectConverter.h"
-#import <MASShortcutView.h>
-#import <MASShortcut.h>
+//#import <MASShortcutView.h>
+//#import <MASShortcut.h>
 
 @interface QSHPreferencesViewController ()
 
@@ -67,22 +67,22 @@
         CGFloat x = [component[@"options"][@"x"] doubleValue];
         CGFloat yFlipped = self.view.frame.size.height - [component[@"options"][@"y"] doubleValue] - height;
 
-        MASShortcutView *shortcutView = [[MASShortcutView alloc] initWithFrame:NSMakeRect(x, yFlipped, width, height)];
+//        MASShortcutView *shortcutView = [[MASShortcutView alloc] initWithFrame:NSMakeRect(x, yFlipped, width, height)];
         if (component[@"options"][@"keycode"]) {
             NSUInteger keycode = [component[@"options"][@"keycode"] unsignedIntegerValue];
             NSUInteger flags = [component[@"options"][@"modifierFlags"] unsignedIntegerValue];
-            MASShortcut *shortcut = [MASShortcut shortcutWithKeyCode:keycode modifierFlags:flags];
-            shortcutView.shortcutValue = shortcut;
+//            MASShortcut *shortcut = [MASShortcut shortcutWithKeyCode:keycode modifierFlags:flags];
+//            shortcutView.shortcutValue = shortcut;
         }
         
-        shortcutView.shortcutValueChange = ^(MASShortcutView *sender) {
+/*        shortcutView.shortcutValueChange = ^(MASShortcutView *sender) {
             QSHWebScriptObjectConverter *converter = [[QSHWebScriptObjectConverter alloc] initWithWebView:self.webView];
             [converter callFunction:component[@"options"][@"onChange"]
                            withArgs:@[@([sender.shortcutValue keyCode]),
                                       @([sender.shortcutValue modifierFlags])]];
         };
 
-        [self.view addSubview:shortcutView];
+        [self.view addSubview:shortcutView];*/
     }
 }
 

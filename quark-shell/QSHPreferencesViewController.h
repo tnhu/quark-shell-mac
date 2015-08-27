@@ -7,9 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <RHPreferences.h>
+//#import <RHPreferences.h>
 
-@interface QSHPreferencesViewController : NSViewController <RHPreferencesViewControllerProtocol>
+@interface QSHPreferencesViewController : NSViewController //<RHPreferencesViewControllerProtocol>
 
 @property (weak) IBOutlet WebView *webView;
 

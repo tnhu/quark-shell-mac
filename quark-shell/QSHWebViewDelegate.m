@@ -10,11 +10,11 @@
 #import "QSHPreferencesViewController.h"
 #import "QSHWebScriptObjectConverter.h"
 #import "QSHWebViewWindowController.h"
-#import <MASShortcut+Monitoring.h>
-#import <RHPreferences.h>
-#import <Sparkle/Sparkle.h>
-#import <ISO8601DateFormatter.h>
-#import <StartAtLoginController.h>
+//#import <MASShortcut+Monitoring.h>
+//#import <RHPreferences.h>
+//#import <Sparkle/Sparkle.h>
+//#import <ISO8601DateFormatter.h>
+//#import <StartAtLoginController.h>
 
 static NSString * const kWebScriptNamespace = @"quark";
 static const NSInteger kPreferencesDefaultHeight = 192;
@@ -255,8 +255,8 @@ static const NSInteger kPreferencesDefaultHeight = 192;
 
 - (void)setLaunchAtLogin:(BOOL)launchAtLogin
 {
-    StartAtLoginController *loginController = [[StartAtLoginController alloc] initWithIdentifier:@"com.hackplan.quark-shell-helper"];
-    loginController.startAtLogin = launchAtLogin;
+//    StartAtLoginController *loginController = [[StartAtLoginController alloc] initWithIdentifier:@"com.hackplan.quark-shell-helper"];
+//    loginController.startAtLogin = launchAtLogin;
 }
 
 - (void)notify:(WebScriptObject *)obj
@@ -272,11 +272,11 @@ static const NSInteger kPreferencesDefaultHeight = 192;
     notification.userInfo = @{@"popupOnClick": message[@"popupOnClick"]};
 
     if (message[@"time"]) {
-        static ISO8601DateFormatter *formatter;
+/*        static ISO8601DateFormatter *formatter;
         if (!formatter) {
             formatter = [[ISO8601DateFormatter alloc] init];
-        }
-        notification.deliveryDate = [formatter dateFromString:message[@"time"]];
+        }*/
+        notification.deliveryDate = message[@"time"];//[formatter dateFromString:message[@"time"]];
     }
 
     NSUserNotificationCenter *notificationCenter = [NSUserNotificationCenter defaultUserNotificationCenter];
@@ -321,17 +321,17 @@ static const NSInteger kPreferencesDefaultHeight = 192;
     }
 
     WebScriptObject *callback = [shortcutObj valueForKey:@"callback"];
-    MASShortcut *shortcut = [MASShortcut shortcutWithKeyCode:keycode modifierFlags:flags];
+/*    MASShortcut *shortcut = [MASShortcut shortcutWithKeyCode:keycode modifierFlags:flags];
     [MASShortcut removeGlobalHotkeyMonitor:shortcut.description];
     [MASShortcut addGlobalHotkeyMonitorWithShortcut:shortcut handler:^{
         QSHWebScriptObjectConverter *converter = [[QSHWebScriptObjectConverter alloc] initWithWebView:self.webView];
         [converter callFunction:callback];
-    }];
+    }];*/
 }
 
 - (void)clearKeyboardShortcut
 {
-    [MASShortcut clearGlobalHotkeyMonitor];
+//    [MASShortcut clearGlobalHotkeyMonitor];
 }
 
 - (void)setupPreferenes:(WebScriptObject *)scriptObj
@@ -356,7 +356,7 @@ static const NSInteger kPreferencesDefaultHeight = 192;
 	}
 
     NSString *title = @"Preferences";
-    self.preferencesWindowController = [[RHPreferencesWindowController alloc] initWithViewControllers:viewControllers andTitle:title];
+//    self.preferencesWindowController = [[RHPreferencesWindowController alloc] initWithViewControllers:viewControllers andTitle:title];
 }
 
 - (void)openPreferences
@@ -432,7 +432,7 @@ static const NSInteger kPreferencesDefaultHeight = 192;
     self.appDelegate.pinned = NO;
 }
 
-- (void)checkUpdate:(NSString *)url
+/*- (void)checkUpdate:(NSString *)url
 {
     SUUpdater *updater = [[SUUpdater alloc] init];
     updater.feedURL = [NSURL URLWithString:url];
@@ -444,7 +444,7 @@ static const NSInteger kPreferencesDefaultHeight = 192;
     SUUpdater *updater = [[SUUpdater alloc] init];
     updater.feedURL = [NSURL URLWithString:url];
     [updater checkForUpdatesInBackground];
-}
+}*/
 
 - (void)emitMessage:(NSString *)name withPayload:(WebScriptObject *)payload
 {
