@@ -1,8 +1,8 @@
-$(function() {
+// $(function() {
     quark.debug = true
 
-    $("#app-version").html(quark.appVersion)
-    $("#app-bundle-version").html("(" + quark.appBundleVersion + ")")
+//    $("#app-version").html(quark.appVersion)
+//    $("#app-bundle-version").html("(" + quark.appBundleVersion + ")")
 
     quark.addKeyboardShortcut({
         keycode: 0x7A, // F1 key
@@ -49,35 +49,35 @@ $(function() {
         }
     ])
 
-    $("#toggle-pin").click(function() {
-        if ($(this).html() == "Pin") {
-            quark.pin()
-            $(this).html("Unpin")
-        }
-        else {
-            quark.unpin()
-            $(this).html("Pin")
-        }
-    })
-
-    $("#show-menu").click(function(event) {
-        quark.showMenu({
-            items: [
-                {label: "Test", click: function() { console.log("I am completely operational") } },
-                {type: "separator"},
-                {label: "Exit", click: function() { console.log("LIFE FUNCTION TERMINATED") } }
-            ],
-            x: event.clientX,
-            y: event.clientY
-        })
-    })
+//    $("#toggle-pin").click(function() {
+//        if ($(this).html() == "Pin") {
+//            quark.pin()
+//            $(this).html("Unpin")
+//        }
+//        else {
+//            quark.unpin()
+//            $(this).html("Pin")
+//        }
+//    })
+//
+//    $("#show-menu").click(function(event) {
+//        quark.showMenu({
+//            items: [
+//                {label: "Test", click: function() { console.log("I am completely operational") } },
+//                {type: "separator"},
+//                {label: "Exit", click: function() { console.log("LIFE FUNCTION TERMINATED") } }
+//            ],
+//            x: event.clientX,
+//            y: event.clientY
+//        })
+//    })
 
     var db = openDatabase('test', '1.0', 'Quark Shell supports WebSQL database', 5 * 1024 * 1024)
 
     quark.on("TestMessage", function(message) {
         console.log(message)
     })
-})
+// })
 
 function setIcon() {
     var iconCanvas = document.getElementById('icon')

@@ -32,7 +32,6 @@
 		1ADE93781B0F0A0A00D69828 /* quark-shell-helper.app in Copy Helper */ = {isa = PBXBuildFile; fileRef = 1ADE93521B0F093E00D69828 /* quark-shell-helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1AF6371E18E9FF430099B508 /* QSHWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6371D18E9FF430099B508 /* QSHWebViewDelegate.m */; };
 		1AFBA8BA19483E4900BEDA0A /* QSHPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBA8B819483E4900BEDA0A /* QSHPreferencesViewController.m */; };
-		1AFBA8BB19483E4900BEDA0A /* QSHPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBA8B919483E4900BEDA0A /* QSHPreferencesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,7 +112,6 @@
 		1AF6371D18E9FF430099B508 /* QSHWebViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHWebViewDelegate.m; sourceTree = "<group>"; };
 		1AFBA8B719483E4900BEDA0A /* QSHPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSHPreferencesViewController.h; sourceTree = "<group>"; };
 		1AFBA8B819483E4900BEDA0A /* QSHPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHPreferencesViewController.m; sourceTree = "<group>"; };
-		1AFBA8B919483E4900BEDA0A /* QSHPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSHPreferencesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,7 +204,6 @@
 				1AF6371D18E9FF430099B508 /* QSHWebViewDelegate.m */,
 				1AFBA8B719483E4900BEDA0A /* QSHPreferencesViewController.h */,
 				1AFBA8B819483E4900BEDA0A /* QSHPreferencesViewController.m */,
-				1AFBA8B919483E4900BEDA0A /* QSHPreferencesViewController.xib */,
 				1AA896701964FB1800E4FDAC /* QSHWebViewWindowController.h */,
 				1AA896711964FB1800E4FDAC /* QSHWebViewWindowController.m */,
 				1AA896721964FB1800E4FDAC /* QSHWebViewWindowController.xib */,
@@ -397,7 +394,6 @@
 				1A91F9FB18E2530B00AA8B7E /* Images.xcassets in Resources */,
 				1A91F9F318E2530B00AA8B7E /* Credits.rtf in Resources */,
 				1AA896741964FB1800E4FDAC /* QSHWebViewWindowController.xib in Resources */,
-				1AFBA8BB19483E4900BEDA0A /* QSHPreferencesViewController.xib in Resources */,
 				1A91F9F918E2530B00AA8B7E /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
