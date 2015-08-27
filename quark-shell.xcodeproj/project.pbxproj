@@ -114,9 +114,6 @@
 		1AFBA8B719483E4900BEDA0A /* QSHPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSHPreferencesViewController.h; sourceTree = "<group>"; };
 		1AFBA8B819483E4900BEDA0A /* QSHPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHPreferencesViewController.m; sourceTree = "<group>"; };
 		1AFBA8B919483E4900BEDA0A /* QSHPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSHPreferencesViewController.xib; sourceTree = "<group>"; };
-		6AFB3BBE0E79B03C1B72DCF5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		BEDF5A5127B1458BB9768C43 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F95033968F72053A096CA5D2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +154,6 @@
 				1ADE93531B0F093E00D69828 /* quark-shell-helper */,
 				1A91F9E118E2530B00AA8B7E /* Frameworks */,
 				1A91F9E018E2530B00AA8B7E /* Products */,
-				8DAB617192B594608C5F2565 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,7 +174,6 @@
 				1A91F9E218E2530B00AA8B7E /* Cocoa.framework */,
 				1A91FA0118E2530B00AA8B7E /* XCTest.framework */,
 				1A91F9E418E2530B00AA8B7E /* Other Frameworks */,
-				BEDF5A5127B1458BB9768C43 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -281,15 +276,6 @@
 				1ADE93591B0F093E00D69828 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8DAB617192B594608C5F2565 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F95033968F72053A096CA5D2 /* Pods.debug.xcconfig */,
-				6AFB3BBE0E79B03C1B72DCF5 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -616,7 +602,6 @@
 		};
 		1A91FA1118E2530C00AA8B7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F95033968F72053A096CA5D2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "quark-shell/quark-shell.entitlements";
@@ -633,7 +618,6 @@
 		};
 		1A91FA1218E2530C00AA8B7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AFB3BBE0E79B03C1B72DCF5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "quark-shell/quark-shell.entitlements";
