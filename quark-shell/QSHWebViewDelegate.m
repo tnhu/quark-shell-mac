@@ -193,13 +193,8 @@ static const NSInteger kPreferencesDefaultHeight = 192;
     NSImage *icon = [[NSImage alloc] initWithData:data];
     icon.size = NSMakeSize(20, 20);
 
-    if (IS_PERIOR_TO_10_9) {
-        self.statusItemView.icon = icon;
-    }
-    else {
-        [icon setTemplate:YES];
-        self.statusItem.button.image = icon;
-    }
+    [icon setTemplate:YES];
+    self.statusItem.button.image = icon;
 }
 
 - (void)changeHighlightedIcon:(NSString *)base64
@@ -227,28 +222,17 @@ static const NSInteger kPreferencesDefaultHeight = 192;
 
 - (void)resetMenubarIcon
 {
-    if (IS_PERIOR_TO_10_9) {
-        self.statusItemView.icon = [NSImage imageNamed:@"StatusIcon"];
-        self.statusItemView.highlightedIcon = [NSImage imageNamed:@"StatusIconWhite"];
-    }
-    else {
-        NSImage *icon = [NSImage imageNamed:@"StatusIcon"];
-        [icon setTemplate:YES];
-        self.statusItem.button.image = icon;
-    }
+    NSImage *icon = [NSImage imageNamed:@"StatusIcon"];
+    [icon setTemplate:YES];
+    self.statusItem.button.image = icon;
 }
 
 - (void)changeLabel:(NSString *)label
 {
     NSDictionary *barTextAttributes;
-    if (IS_PERIOR_TO_10_9) {
-        self.statusItemView.label = label;
-        barTextAttributes = @{NSFontAttributeName: MENUBAR_FONT};
-    }
-    else {
-        self.statusItem.title = label;
-        barTextAttributes = @{NSFontAttributeName: self.statusItem.button.font};
-    }
+    self.statusItem.title = label;
+    barTextAttributes = @{NSFontAttributeName: self.statusItem.button.font};
+
     // 20 is image width, 10 is extra margin
     self.statusItem.length = 20 + [label sizeWithAttributes:barTextAttributes].width + 10;
 }

@@ -43,32 +43,23 @@
     NSStatusBar *bar = [NSStatusBar systemStatusBar];
 
     self.statusItem = [bar statusItemWithLength:NSSquareStatusItemLength];
-    if (IS_PERIOR_TO_10_9) {
-        self.statusItemView = [[QSHStatusItemView alloc] initWithFrame:NSMakeRect(0, 0, 20, 20)];
-        self.statusItemView.target = self;
-        self.statusItemView.action = @selector(statusItemClicked);
-        [self.statusItemView sendActionOn:(NSLeftMouseDownMask | NSRightMouseDownMask)];
-        self.statusItem.view = self.statusItemView;
-        self.statusItemView.statusItem = self.statusItem;
-    }
-    else {
-        NSImage *statusIcon = [NSImage imageNamed:@"tray-icon"];
-        [statusIcon setTemplate:YES];
-        self.statusItem.button.image = statusIcon;
-        
-        // We can't keep the button highlighted by calling `setHighlighted:` or `highlight:`.
-        // So we are adding another invisible button as subview to take over the event handler.
-        // Then we can call `highlight:` in the event handler.
-        // See: http://stackoverflow.com/questions/26004684/nsstatusbarbutton-keep-highlighted
-        NSButton *button = [[NSButton alloc] initWithFrame:self.statusItem.button.frame];
-        button.alphaValue = 0;
-        NSArray *array = @[self.statusItem.button, button];
-        self.statusItem.button.superview.subviews = array;
 
-        [button sendActionOn:(NSLeftMouseDownMask | NSRightMouseDownMask)];
-        button.target = self;
-        button.action = @selector(statusItemClicked);
-    }
+    NSImage *statusIcon = [NSImage imageNamed:@"tray-icon"];
+    [statusIcon setTemplate:YES];
+    self.statusItem.button.image = statusIcon;
+    
+    // We can't keep the button highlighted by calling `setHighlighted:` or `highlight:`.
+    // So we are adding another invisible button as subview to take over the event handler.
+    // Then we can call `highlight:` in the event handler.
+    // See: http://stackoverflow.com/questions/26004684/nsstatusbarbutton-keep-highlighted
+    NSButton *button = [[NSButton alloc] initWithFrame:self.statusItem.button.frame];
+    button.alphaValue = 0;
+    NSArray *array = @[self.statusItem.button, button];
+    self.statusItem.button.superview.subviews = array;
+
+    [button sendActionOn:(NSLeftMouseDownMask | NSRightMouseDownMask)];
+    button.target = self;
+    button.action = @selector(statusItemClicked);
 
     self.window.level = NSFloatingWindowLevel;
     self.window.delegate = self;
@@ -146,13 +137,7 @@
     
     NSRect itemFrame;
 
-    if (IS_PERIOR_TO_10_9) {
-        self.statusItemView.itemHighlighted = self.shouldBeVisible;
-        itemFrame = self.statusItem.view.window.frame;
-    }
-    else {
-        itemFrame = self.statusItem.button.window.frame;
-    }
+    itemFrame = self.statusItem.button.window.frame;
 
     NSRect windowFrame = self.window.frame;
     windowFrame.origin.x = NSMidX(itemFrame) - NSWidth(windowFrame) / 2.0;

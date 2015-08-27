@@ -34,7 +34,6 @@
 		1A82DE5A1903B095006AB37F /* QSHWindowBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHWindowBorderView.m; sourceTree = "<group>"; };
 		1A91F9DF18E2530B00AA8B7E /* quark-shell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quark-shell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A91F9E218E2530B00AA8B7E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		1A91F9E718E2530B00AA8B7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A91F9EA18E2530B00AA8B7E /* quark-shell-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "quark-shell-Info.plist"; sourceTree = "<group>"; };
 		1A91F9EC18E2530B00AA8B7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A91F9EE18E2530B00AA8B7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,17 +90,8 @@
 			children = (
 				1A91FA5918E25F3C00AA8B7E /* WebKit.framework */,
 				1A91F9E218E2530B00AA8B7E /* Cocoa.framework */,
-				1A91F9E418E2530B00AA8B7E /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1A91F9E418E2530B00AA8B7E /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1A91F9E718E2530B00AA8B7E /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		1A91F9E818E2530B00AA8B7E /* quark-shell */ = {

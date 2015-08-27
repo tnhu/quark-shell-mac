@@ -14,8 +14,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        _icon = [NSImage imageNamed:@"StatusIcon"];
-        _highlightedIcon = [NSImage imageNamed:@"StatusIconWhite"];
+        _icon = [NSImage imageNamed:@"tray-icon"];
+        _highlightedIcon = [NSImage imageNamed:@"tray-icon"];
     }
     return self;
 }
