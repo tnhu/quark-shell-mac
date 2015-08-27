@@ -15,10 +15,7 @@
 		1A91F9EF18E2530B00AA8B7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F9EE18E2530B00AA8B7E /* main.m */; };
 		1A91F9F618E2530B00AA8B7E /* QSHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F9F518E2530B00AA8B7E /* QSHAppDelegate.m */; };
 		1A91F9F918E2530B00AA8B7E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A91F9F718E2530B00AA8B7E /* MainMenu.xib */; };
-		1A91FA0218E2530B00AA8B7E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A91FA0118E2530B00AA8B7E /* XCTest.framework */; };
 		1A91FA0318E2530B00AA8B7E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A91F9E218E2530B00AA8B7E /* Cocoa.framework */; };
-		1A91FA0B18E2530C00AA8B7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A91FA0918E2530C00AA8B7E /* InfoPlist.strings */; };
-		1A91FA0D18E2530C00AA8B7E /* quark_shellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91FA0C18E2530C00AA8B7E /* quark_shellTests.m */; };
 		1A91FA5A18E25F3C00AA8B7E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A91FA5918E25F3C00AA8B7E /* WebKit.framework */; };
 		1A9A456E1A1C93C600C98589 /* NSWindow+Fade.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A456D1A1C93C600C98589 /* NSWindow+Fade.m */; };
 		1AA896731964FB1800E4FDAC /* QSHWebViewWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA896711964FB1800E4FDAC /* QSHWebViewWindowController.m */; };
@@ -59,10 +56,6 @@
 		1A91F9F518E2530B00AA8B7E /* QSHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSHAppDelegate.m; sourceTree = "<group>"; };
 		1A91F9F818E2530B00AA8B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1A91FA0018E2530B00AA8B7E /* quark-shellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quark-shellTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A91FA0118E2530B00AA8B7E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		1A91FA0818E2530C00AA8B7E /* quark-shellTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "quark-shellTests-Info.plist"; sourceTree = "<group>"; };
-		1A91FA0A18E2530C00AA8B7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1A91FA0C18E2530C00AA8B7E /* quark_shellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quark_shellTests.m; sourceTree = "<group>"; };
 		1A91FA5918E25F3C00AA8B7E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		1A9A456C1A1C93C600C98589 /* NSWindow+Fade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+Fade.h"; sourceTree = "<group>"; };
 		1A9A456D1A1C93C600C98589 /* NSWindow+Fade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+Fade.m"; sourceTree = "<group>"; };
@@ -91,7 +84,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A91FA0318E2530B00AA8B7E /* Cocoa.framework in Frameworks */,
-				1A91FA0218E2530B00AA8B7E /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +95,6 @@
 			children = (
 				A4FD45CA1B8EDF2D0078339B /* tray-icon.png */,
 				1A91F9E818E2530B00AA8B7E /* quark-shell */,
-				1A91FA0618E2530C00AA8B7E /* quark-shellTests */,
 				1A91F9E118E2530B00AA8B7E /* Frameworks */,
 				1A91F9E018E2530B00AA8B7E /* Products */,
 			);
@@ -123,7 +114,6 @@
 			children = (
 				1A91FA5918E25F3C00AA8B7E /* WebKit.framework */,
 				1A91F9E218E2530B00AA8B7E /* Cocoa.framework */,
-				1A91FA0118E2530B00AA8B7E /* XCTest.framework */,
 				1A91F9E418E2530B00AA8B7E /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -172,24 +162,6 @@
 				1A91F9EB18E2530B00AA8B7E /* InfoPlist.strings */,
 				1A91F9EE18E2530B00AA8B7E /* main.m */,
 				1A91F9F018E2530B00AA8B7E /* quark-shell-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		1A91FA0618E2530C00AA8B7E /* quark-shellTests */ = {
-			isa = PBXGroup;
-			children = (
-				1A91FA0C18E2530C00AA8B7E /* quark_shellTests.m */,
-				1A91FA0718E2530C00AA8B7E /* Supporting Files */,
-			);
-			path = "quark-shellTests";
-			sourceTree = "<group>";
-		};
-		1A91FA0718E2530C00AA8B7E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1A91FA0818E2530C00AA8B7E /* quark-shellTests-Info.plist */,
-				1A91FA0918E2530C00AA8B7E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -300,7 +272,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A91FA0B18E2530C00AA8B7E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +314,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A91FA0D18E2530C00AA8B7E /* quark_shellTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,14 +342,6 @@
 				1A91F9F818E2530B00AA8B7E /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		1A91FA0918E2530C00AA8B7E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A91FA0A18E2530C00AA8B7E /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
