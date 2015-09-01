@@ -168,7 +168,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = QSH;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Hackplan;
 				TargetAttributes = {
 					1A91F9DE18E2530B00AA8B7E = {
@@ -285,6 +285,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -300,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -333,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -349,6 +350,7 @@
 				GCC_PREFIX_HEADER = "quark-shell/quark-shell-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/quark-shell/quark-shell-Info.plist";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackplan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "quark-shell";
 				WRAPPER_EXTENSION = app;
 			};
@@ -365,6 +367,7 @@
 				GCC_PREFIX_HEADER = "quark-shell/quark-shell-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/quark-shell/quark-shell-Info.plist";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackplan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "quark-shell";
 				WRAPPER_EXTENSION = app;
 			};

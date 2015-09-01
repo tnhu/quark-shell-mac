@@ -32,6 +32,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+//    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"WebKitDeveloperExtras"]; // YES to enable Web Inspector
+//    [[NSUserDefaults standardUserDefaults] synchronize];
+
     // TODO: bundle identifier should be generated from manifest.json
     WebPreferences *webPrefs = [WebPreferences standardPreferences];
     NSString *bundleIdentifier = [[NSBundle mainBundle] infoDictionary][@"CFBundleIdentifier"];
@@ -47,7 +50,7 @@
     NSImage *statusIcon = [NSImage imageNamed:@"tray-icon"];
     [statusIcon setTemplate:YES];
     self.statusItem.button.image = statusIcon;
-    
+
     // We can't keep the button highlighted by calling `setHighlighted:` or `highlight:`.
     // So we are adding another invisible button as subview to take over the event handler.
     // Then we can call `highlight:` in the event handler.
@@ -122,7 +125,7 @@
             self.secondaryClickCallback();
         }
     }
-    
+
     if (self.window.visible) {
         [self hideWindow];
     }
@@ -134,7 +137,7 @@
 - (void)refreshStyle
 {
     [self.statusItem.button highlight:self.shouldBeVisible];
-    
+
     NSRect itemFrame;
 
     itemFrame = self.statusItem.button.window.frame;

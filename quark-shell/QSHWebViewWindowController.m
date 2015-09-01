@@ -26,6 +26,9 @@
         NSString *fullURLString = [kRootPath stringByAppendingString:urlString];
         NSString *url = [[NSURL URLWithString:fullURLString relativeToURL:[[NSBundle mainBundle] resourceURL]] absoluteString];
         self.webView.mainFrameURL = url;
+
+        // No resizable (TODO: add to javascript API)
+        [self.window setStyleMask:[self.window styleMask] & ~NSResizableWindowMask];
     }
     return self;
 }

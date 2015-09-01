@@ -17,7 +17,7 @@
 //#import <StartAtLoginController.h>
 
 static NSString * const kWebScriptNamespace = @"quark";
-static const NSInteger kPreferencesDefaultHeight = 192;
+//static const NSInteger kPreferencesDefaultHeight = 192;
 
 @interface QSHWebViewDelegate () <NSUserNotificationCenterDelegate> {
     NSString *appVersion;
@@ -36,7 +36,7 @@ static const NSInteger kPreferencesDefaultHeight = 192;
 
 + (void)initialize
 {
-    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"WebKitDeveloperExtras"];
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"WebKitDeveloperExtras"]; // YES to enable Web Inspector
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
@@ -80,15 +80,16 @@ static const NSInteger kPreferencesDefaultHeight = 192;
         selector == @selector(removeAllDeliveredNotifications) ||
         selector == @selector(addKeyboardShortcut:) ||
         selector == @selector(clearKeyboardShortcut) ||
-        selector == @selector(setupPreferenes:) ||
+//        selector == @selector(setupPreferenes:) ||
         selector == @selector(openPreferences) ||
         selector == @selector(closePreferences) ||
         selector == @selector(newWindow:) ||
         selector == @selector(closeWindow) ||
         selector == @selector(pin) ||
         selector == @selector(unpin) ||
-        selector == @selector(checkUpdate:) ||
-        selector == @selector(checkUpdateInBackground:) ||
+        selector == @selector(reveal) ||
+//        selector == @selector(checkUpdate:) ||
+//        selector == @selector(checkUpdateInBackground:) ||
         selector == @selector(emitMessage:withPayload:) ||
         selector == @selector(subscribeMessage:withCallback:) ||
         selector == @selector(showMenu:)) {
@@ -120,24 +121,27 @@ static const NSInteger kPreferencesDefaultHeight = 192;
     else if (selector == @selector(changeLabel:)) {
         result = @"setLabel";
     }
+    else if (selector == @selector(reveal:)) {
+        result = @"reveal";
+    }
     else if (selector == @selector(openURL:)) {
         result = @"openURL";
     }
     else if (selector == @selector(addKeyboardShortcut:)) {
         result = @"addKeyboardShortcut";
     }
-    else if (selector == @selector(setupPreferenes:)) {
-        result = @"setupPreferences";
-    }
+//    else if (selector == @selector(setupPreferenes:)) {
+//        result = @"setupPreferences";
+//    }
     else if (selector == @selector(newWindow:)) {
         result = @"newWindow";
     }
-    else if (selector == @selector(checkUpdate:)) {
-        result = @"checkUpdate";
-    }
-    else if (selector == @selector(checkUpdateInBackground:)) {
-        result = @"checkUpdateInBackground";
-    }
+//    else if (selector == @selector(checkUpdate:)) {
+//        result = @"checkUpdate";
+//    }
+//    else if (selector == @selector(checkUpdateInBackground:)) {
+//        result = @"checkUpdateInBackground";
+//    }
     else if (selector == @selector(emitMessage:withPayload:)) {
         result = @"emit";
     }
@@ -222,7 +226,7 @@ static const NSInteger kPreferencesDefaultHeight = 192;
 
 - (void)resetMenubarIcon
 {
-    NSImage *icon = [NSImage imageNamed:@"StatusIcon"];
+    NSImage *icon = [NSImage imageNamed:@"tray-icon"];
     [icon setTemplate:YES];
     self.statusItem.button.image = icon;
 }
@@ -304,7 +308,7 @@ static const NSInteger kPreferencesDefaultHeight = 192;
         return;
     }
 
-    WebScriptObject *callback = [shortcutObj valueForKey:@"callback"];
+//    WebScriptObject *callback = [shortcutObj valueForKey:@"callback"];
 /*    MASShortcut *shortcut = [MASShortcut shortcutWithKeyCode:keycode modifierFlags:flags];
     [MASShortcut removeGlobalHotkeyMonitor:shortcut.description];
     [MASShortcut addGlobalHotkeyMonitorWithShortcut:shortcut handler:^{
@@ -404,6 +408,11 @@ static const NSInteger kPreferencesDefaultHeight = 192;
 - (void)closeWindow
 {
     [self.webViewWindowController close];
+}
+
+- (void)reveal:(NSString *)path
+{
+    NSLog(@"Reveal %@", path);
 }
 
 - (void)pin
@@ -526,7 +535,7 @@ static const NSInteger kPreferencesDefaultHeight = 192;
     NSOpenPanel *openPanel = [NSOpenPanel openPanel];
     openPanel.canChooseFiles = YES;
     openPanel.canChooseDirectories = NO;
-    
+
     [openPanel beginWithCompletionHandler:^(NSInteger result) {
         if (result == NSFileHandlingPanelOKButton) {
             NSURL *fileURL = openPanel.URL;

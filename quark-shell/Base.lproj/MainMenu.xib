@@ -37,7 +37,5 @@
                 </subviews>
             </view>
         </window>
-        <menu title="Main Menu" systemMenu="main" id="tdM-1d-aZL">
-        </menu>
     </objects>
 </document>
